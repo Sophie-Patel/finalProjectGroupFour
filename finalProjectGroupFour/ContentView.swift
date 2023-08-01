@@ -13,11 +13,11 @@ struct ContentView: View {
         
         NavigationStack {
             VStack {
-                VStack {
+                VStack(alignment: .center) {
                     Text(" ")
                 }
                 .toolbar {
-                    ToolBarItemGroup(placement: .status) {
+                    ToolbarItemGroup(placement: .status) {
                         NavigationLink(destination: HomePage()) {
                             Text("H")
                         }
