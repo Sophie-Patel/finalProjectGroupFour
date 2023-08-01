@@ -9,8 +9,8 @@ import SwiftUI
 
 struct FriendsPage: View {
     var body: some View {
-        Text("friends page")
-        Text("click below to see friends resp")
+        Text("Friends Page")
+        Text("Click below to see your friends responses")
         Text("I am greatful for... ")
     }
 }
