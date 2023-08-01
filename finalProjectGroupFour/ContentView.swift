@@ -8,19 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var text = ""
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        NavigationStack {
+            VStack {
+                VStack {
+                    Text(" ")
+                }
+                .toolbar {
+                    ToolBarItemGroup(placement: .status) {
+                        NavigationLink(destination: HomePage()) {
+                            Text("H")
+                        }
+                        NavigationLink(destination: ArchivePage()) {
+                            Text("A")
+                        }
+                        NavigationLink(destination: FriendsPage()) {
+                            Text("F")
+                        }
+                        NavigationLink(destination: ProfilePage()) {
+                            Text("P")
+                        }
+                    }
+                }
+            }
         }
-        .padding()
+        
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }

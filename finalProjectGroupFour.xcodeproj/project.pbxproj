@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD509ED92A7916930029033A /* FriendsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD509ED82A7916930029033A /* FriendsPage.swift */; };
+		BD509EDB2A7916A10029033A /* ArchivePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD509EDA2A7916A10029033A /* ArchivePage.swift */; };
+		BD509EDD2A7916B30029033A /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD509EDC2A7916B30029033A /* ProfilePage.swift */; };
+		BD509EDF2A79203E0029033A /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD509EDE2A79203E0029033A /* HomePage.swift */; };
 		BDBEEF0D2A78FB6200D8EFB7 /* finalProjectGroupFourApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBEEF0C2A78FB6200D8EFB7 /* finalProjectGroupFourApp.swift */; };
 		BDBEEF0F2A78FB6200D8EFB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBEEF0E2A78FB6200D8EFB7 /* ContentView.swift */; };
 		BDBEEF112A78FB6400D8EFB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDBEEF102A78FB6400D8EFB7 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD509ED82A7916930029033A /* FriendsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPage.swift; sourceTree = "<group>"; };
+		BD509EDA2A7916A10029033A /* ArchivePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivePage.swift; sourceTree = "<group>"; };
+		BD509EDC2A7916B30029033A /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+		BD509EDE2A79203E0029033A /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		BDBEEF092A78FB6200D8EFB7 /* finalProjectGroupFour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finalProjectGroupFour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDBEEF0C2A78FB6200D8EFB7 /* finalProjectGroupFourApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalProjectGroupFourApp.swift; sourceTree = "<group>"; };
 		BDBEEF0E2A78FB6200D8EFB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,7 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				BDBEEF0C2A78FB6200D8EFB7 /* finalProjectGroupFourApp.swift */,
+				BD509EDA2A7916A10029033A /* ArchivePage.swift */,
+				BD509ED82A7916930029033A /* FriendsPage.swift */,
+				BD509EDC2A7916B30029033A /* ProfilePage.swift */,
 				BDBEEF0E2A78FB6200D8EFB7 /* ContentView.swift */,
+				BD509EDE2A79203E0029033A /* HomePage.swift */,
 				BDBEEF102A78FB6400D8EFB7 /* Assets.xcassets */,
 				BDBEEF122A78FB6400D8EFB7 /* Preview Content */,
 			);
@@ -137,6 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD509EDD2A7916B30029033A /* ProfilePage.swift in Sources */,
+				BD509EDF2A79203E0029033A /* HomePage.swift in Sources */,
+				BD509ED92A7916930029033A /* FriendsPage.swift in Sources */,
+				BD509EDB2A7916A10029033A /* ArchivePage.swift in Sources */,
 				BDBEEF0F2A78FB6200D8EFB7 /* ContentView.swift in Sources */,
 				BDBEEF0D2A78FB6200D8EFB7 /* finalProjectGroupFourApp.swift in Sources */,
 			);
