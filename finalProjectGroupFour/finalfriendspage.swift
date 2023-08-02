@@ -27,7 +27,7 @@ struct finalfriendspage: View {
                         ToolbarItemGroup(placement: .status) {
                             HStack {
                                 NavigationLink(destination: HomePage()) {
-                                    Image("homeimage")
+                                    Image("homeimage ") 
                                         .resizable(resizingMode: .stretch)
                                         .aspectRatio(contentMode: .fit)
                                 }
