@@ -18,17 +18,29 @@ struct ContentView: View {
                 }
                 .toolbar {
                     ToolbarItemGroup(placement: .status) {
-                        NavigationLink(destination: HomePage()) {
-                            Text("H")
-                        }
-                        NavigationLink(destination: ArchivePage()) {
-                            Text("A")
-                        }
-                        NavigationLink(destination: FriendsPage()) {
-                            Text("F")
-                        }
-                        NavigationLink(destination: ProfilePage()) {
-                            Text("P")
+                        HStack {
+                            NavigationLink(destination: HomePage()) {
+                                Image("homeimage")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                            NavigationLink(destination: ArchivePage()) {
+                                Image("archiveimage")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                            
+                            NavigationLink(destination: FriendsPage()) {
+                                Image("friendsimage")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                            
+                            NavigationLink(destination: ProfilePage()) {
+                                Image("profileimage")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fit)
+                            }
                         }
                     }
                 }
