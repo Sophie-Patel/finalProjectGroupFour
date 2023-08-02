@@ -23,7 +23,7 @@ struct ArchivePage: View {
                 Text("1.8.23")
                 Text("31.7.23")
                 
-                
+            // THIS ENTIRE PAGE AND THE EXAMPLE ARCHIVE PAGE IS A PLACEHOLDER TO BE REPLACED BY MARTINA ON THURSDAY
             }
             NavigationStack {
                 VStack {

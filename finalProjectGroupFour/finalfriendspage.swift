@@ -55,7 +55,12 @@ struct finalfriendspage: View {
                     
                     VStack {
                         List(0..<1) { i in
-                            Image("diem")
+                            Image("diemlogo")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .cornerRadius(20)
+                            
+                            
                             Text("anonomous user 234462")
                             HStack{
                                 Text("I'm so grateful for learning, my family and my health")
