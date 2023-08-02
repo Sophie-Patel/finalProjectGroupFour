@@ -1,30 +1,23 @@
 //
-//  ArchivePage.swift
+//  finalfriendspage.swift
 //  finalProjectGroupFour
 //
-//  Created by scholar on 01/08/2023.
+//  Created by scholar on 02/08/2023.
 //
-
 import SwiftUI
 
-struct ArchivePage: View {
+struct finalfriendspage: View {
     var body: some View {
+        
+        let greenColour : Color = Color(red: (255/255), green: (240/255), blue: (219/255))
+        // rgb(178, 172, 136)--- green
+        
+        //rgb(255,240,219) --- beige
+        
+        
         ZStack {
             Color(red: (255/255), green: (240/255), blue: (219/255))
                 .ignoresSafeArea()
-            
-            VStack {
-                Text("Archive page")
-                    .font(.title)
-                NavigationLink(destination: examplearchive()) {
-                    Text("3.8.23")
-                }
-                Text("2.8.23")
-                Text("1.8.23")
-                Text("31.7.23")
-                
-                
-            }
             NavigationStack {
                 VStack {
                     VStack(alignment: .center) {
@@ -57,24 +50,48 @@ struct ArchivePage: View {
                                                 .fit)
                                 }
                             }
-                            
                         }
-                        
-                        
-                        
-                        
                     }
                     
+                    VStack {
+                        List(0..<1) { i in
+                            Image("diem")
+                            Text("anonomous user 234462")
+                            HStack{
+                                Text("I'm so grateful for learning, my family and my health")
+                                
+                            }
+                            
+                            
+                            Text("anonomous user 49583")
+                            HStack{
+                                Text("I'm so grateful to be at Kode with Klossy today ")
+                                
+                            }
+                            
+                            Text("anonomous user 35342")
+                            HStack{
+                                                    Text("I'm really feeling grateful for the ability to code, and learn at Kode With Klossy")
+                            }
+                            
+                            Text("anonymous user 12345")
+                            HStack {
+                                Text("I am grateful for my family and having somewhere to live")
+                            }
+                            
+                           
+                        }
+                    }
+                    .scrollContentBackground(.hidden)
+                    .background(greenColour)
                 }
-                
             }
         }
     }
-    struct ArchivePage_Previews: PreviewProvider {
+}
+    struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
-            ArchivePage()
-            
+            ContentView()
         }
     }
-    
-}
+
