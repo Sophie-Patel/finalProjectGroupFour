@@ -12,28 +12,66 @@ struct ArchivePage: View {
         
         
         VStack {
-            Text("archive title")
-  
-            Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+            Text("Archive page")
+                .font(.title)
+            NavigationLink(destination: examplearchive()) {
+                Text("3.8.23")
             }
-                Text("2wwds")
-                Text("21")
-                Text("26")
-                Text("11")
-            }
-
-        
-        
-        
+            Text("2.8.23")
+            Text("1.8.23")
+            Text("31.7.23")
+            
             
         }
-
-    }
-
-
-struct ArchivePage_Previews: PreviewProvider {
-    static var previews: some View {
-        ArchivePage()
+        NavigationStack {
+            VStack {
+                VStack(alignment: .center) {
+                    Text(" ")
+                }
+                .toolbar {
+                    ToolbarItemGroup(placement: .status) {
+                        HStack {
+                            NavigationLink(destination: HomePage()) {
+                                Image("homeimage")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                            NavigationLink(destination: ArchivePage()) {
+                                Image("archiveimage")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                            
+                            NavigationLink(destination: FriendsPage()) {
+                                Image("friendsimage")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                            
+                            NavigationLink(destination: ProfilePage()) {
+                                Image("profileimage")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode:
+                                            .fit)
+                            }
+                        }
+                        
+                    }
+                    
+                    
+                    
+                    
+                }
+                
+            }
+            
+        }
     }
 }
+        struct ArchivePage_Previews: PreviewProvider {
+            static var previews: some View {
+                ArchivePage()
+                
+            }
+        }
+  

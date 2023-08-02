@@ -16,6 +16,9 @@ struct HomePage: View {
             Text("What 3 things are you most grateful for today?")
             TextField("Prompt response", text: $text)
                 .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            NavigationLink(destination: FriendsPage()) {
+                Text("Submit")
+            }
             
         
             // navigation bar

@@ -14,7 +14,11 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 VStack(alignment: .center) {
-                    Text(" ")
+                    Text("Welcome to")
+                        .font(.title)
+                    Image("diemlogo")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
                 }
                 .toolbar {
                     ToolbarItemGroup(placement: .status) {
@@ -46,7 +50,6 @@ struct ContentView: View {
                 }
             }
         }
-        
     }
     
     struct ContentView_Previews: PreviewProvider {
