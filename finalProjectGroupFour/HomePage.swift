@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomePage: View {
     @State private var text = ""
+    @Binding var journalDays: [JournalDay]
     var body: some View {
         ZStack {
             Color(red: (248/255), green: (248/255), blue: (243/255))
@@ -16,10 +17,11 @@ struct HomePage: View {
             VStack {
                 
                 Text("4.8.23")
+                    .font(.title2)
                 Text("What 3 things are you most grateful for today?")
                 TextField("Prompt response", text: $text)
                     .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                NavigationLink(destination: finalfriendspage()) {
+                NavigationLink(destination: finalfriendspage(journalDays:$journalDays)) {
                     Text("Submit")
                 }
                 
@@ -33,24 +35,24 @@ struct HomePage: View {
                         .toolbar {
                             ToolbarItemGroup(placement: .status) {
                                 HStack {
-                                    NavigationLink(destination: HomePage()) {
+                                    NavigationLink(destination: SubmitContentView (journalText:"")) {
                                         Image("homeimage")
                                             .resizable(resizingMode: .stretch)
                                             .aspectRatio(contentMode: .fit)
                                     }
-                                    NavigationLink(destination: ArchivePage()) {
+                                    NavigationLink(destination: ArchivePage(journalDays:.constant([]))) {
                                         Image("archiveimage")
                                             .resizable(resizingMode: .stretch)
                                             .aspectRatio(contentMode: .fit)
                                     }
                                     
-                                    NavigationLink(destination: finalfriendspage()) {
+                                    NavigationLink(destination: finalfriendspage(journalDays:$journalDays)) {
                                         Image("friendsimage")
                                             .resizable(resizingMode: .stretch)
                                             .aspectRatio(contentMode: .fit)
                                     }
                                     
-                                    NavigationLink(destination: ProfilePage()) {
+                                    NavigationLink(destination: ProfilePage(journalDays:$journalDays)) {
                                         Image("profileimage")
                                             .resizable(resizingMode: .stretch)
                                             .aspectRatio(contentMode:
@@ -73,7 +75,7 @@ struct HomePage: View {
         
         struct HomePage_Previews: PreviewProvider {
             static var previews: some View {
-                HomePage()
+                HomePage(journalDays:.constant([]))
             }
         }
  

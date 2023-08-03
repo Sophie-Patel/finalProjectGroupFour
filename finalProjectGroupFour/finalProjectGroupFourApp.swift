@@ -11,7 +11,8 @@ import SwiftUI
 struct finalProjectGroupFourApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(journalDays:.constant([]))
+    //        SubmitContentView(journalText:"")
         }
     }
 }

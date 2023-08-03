@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var text = ""
+    @Binding var journalDays: [JournalDay]
     var body: some View {
        
             NavigationStack {
@@ -28,24 +29,24 @@ struct ContentView: View {
                     .toolbar {
                         ToolbarItemGroup(placement: .status) {
                             HStack {
-                                NavigationLink(destination: HomePage()) {
+                                NavigationLink(destination:SubmitContentView (journalText:"")) {
                                     Image("homeimage")
                                         .resizable(resizingMode: .stretch)
                                         .aspectRatio(contentMode: .fit)
                                 }
-                                NavigationLink(destination: ArchivePage()) {
+                                NavigationLink(destination: ArchivePage(journalDays:$journalDays)) {
                                     Image("archiveimage")
                                         .resizable(resizingMode: .stretch)
                                         .aspectRatio(contentMode: .fit)
                                 }
                                 
-                                NavigationLink(destination: finalfriendspage()) {
+                                NavigationLink(destination: finalfriendspage(journalDays:$journalDays)) {
                                     Image("friendsimage")
                                         .resizable(resizingMode: .stretch)
                                         .aspectRatio(contentMode: .fit)
                                 }
                                 
-                                NavigationLink(destination: ProfilePage()) {
+                                NavigationLink(destination: ProfilePage(journalDays:$journalDays)) {
                                     Image("profileimage")
                                         .resizable(resizingMode: .stretch)
                                         .aspectRatio(contentMode: .fit)
@@ -57,11 +58,11 @@ struct ContentView: View {
             }
         }
     }
-
+}
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
-            ContentView()
+            ContentView(journalDays: .constant([]))
         }
     }
-}
+                                               
 

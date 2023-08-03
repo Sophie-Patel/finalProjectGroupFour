@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProfilePage: View {
+    @Binding var journalDays: [JournalDay]
     var body: some View {
         ZStack {
             Color(red: (248/255), green: (248/255), blue: (243/255))
@@ -47,24 +48,24 @@ struct ProfilePage: View {
                     .toolbar {
                         ToolbarItemGroup(placement: .status) {
                             HStack {
-                                NavigationLink(destination: HomePage()) {
+                                NavigationLink(destination: HomePage(journalDays:$journalDays)) {
                                     Image("homeimage")
                                         .resizable(resizingMode: .stretch)
                                         .aspectRatio(contentMode: .fit)
                                 }
-                                NavigationLink(destination: ArchivePage()) {
+                                NavigationLink(destination: ArchivePage(journalDays:.constant([]))) {
                                     Image("archiveimage")
                                         .resizable(resizingMode: .stretch)
                                         .aspectRatio(contentMode: .fit)
                                 }
                                 
-                                NavigationLink(destination: finalfriendspage()) {
+                                NavigationLink(destination: finalfriendspage(journalDays:$journalDays)) {
                                     Image("friendsimage")
                                         .resizable(resizingMode: .stretch)
                                         .aspectRatio(contentMode: .fit)
                                 }
                                 
-                                NavigationLink(destination: ProfilePage()) {
+                                NavigationLink(destination: ProfilePage(journalDays:$journalDays)) {
                                     Image("profileimage")
                                         .resizable(resizingMode: .stretch)
                                         .aspectRatio(contentMode:
@@ -80,7 +81,7 @@ struct ProfilePage: View {
     struct
 ProfilePage_Previews: PreviewProvider {
         static var previews: some View {
-            ProfilePage()
+            ProfilePage(journalDays:.constant([]))
         }
     }
     
