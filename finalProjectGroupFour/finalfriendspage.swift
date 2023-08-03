@@ -26,7 +26,7 @@ struct finalfriendspage: View {
                                         .resizable(resizingMode: .stretch)
                                         .aspectRatio(contentMode: .fit)
                                         .navigationBarBackButtonHidden(true)
-                                    
+
                                 }
                                 NavigationLink(destination: ArchivePage(journalDays:$journalDays)) {
                                     Image("archiveimage")
@@ -55,52 +55,72 @@ struct finalfriendspage: View {
                         VStack {
                             Text("Friends page")
                                 .font(.largeTitle)
+                                .fontWeight(.black)
+                                .foregroundColor(Color(red: 162/255, green: 193/255, blue: 172/255))
                             
                             
                             ScrollView {
                                 VStack {
                                     
-                                    Text("anonymous user")
+                                    Text("Anonymous")
+                                        .fontWeight(.semibold)
+                                        .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
                                     Group{
                                         HStack{
-                                            Text("i love kode with klossy!!!! Im really happy i can code now  ")
+                                            Text("I love kode with klossy!!!! Im really happy I can code now  ")
+                                                .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
                                             
                                         }
                                         Divider()
                                         
-                                        Text("anonymous user 364764")
+                                        Text("Anonymous")
+                                            .fontWeight(.semibold)
+                                            .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
                                         HStack{
                                             Text("I am grateful for my health and safety")
+                                                .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
                                         }
                                         
                                         Divider()
                                         
-                                        Text("anonomous user 234462")
+                                        Text("Anonymous")
+                                            .fontWeight(.semibold)
+                                            .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
                                         HStack{
-                                            Text("i love kode with klossy!!!! Im really happy i can code now  ")
+                                            Text("I'm grateful for coding")
+                                                .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
                                             
                                         }
                                         Divider()
                                     }
                                     Group{
-                                        Text("anonomous user 49583")
+                                        Text("Anonymous")
+                                            .fontWeight(.semibold)
+                                            .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
                                         HStack{
                                             Text("i love kode with klossy!!!! i loveeee cake! ")
+                                                .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
                                             
                                         }
                                         
                                         Divider()
-                                        Text("anonomous user 35342")
+                                        Text("Anonymous")
+                                            .fontWeight(.semibold)
+                                            .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
                                         HStack{
                                             
                                             Text("I'm really feeling grateful for the ability to code, and learn at Kode With Klossy")
+                                                .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
                                             
                                         }
                                         Divider()
                                         
-                                        Text("anonymous user 45764")
+                                        Text("Anonymous")
+                                            .fontWeight(.semibold)
+                                            .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
                                         HStack{
                                             Text("I am grateful for technology and education")
+                                                .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
                                         }
                                         
                                     }

@@ -19,7 +19,7 @@ struct ContentView: View {
                             .ignoresSafeArea()
                     VStack(alignment: .center) {
                   
-                        Image("finaldiemlogo")
+                        Image("finalfinaldiem")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
                             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
@@ -33,6 +33,7 @@ struct ContentView: View {
                                     Image("homeimage")
                                         .resizable(resizingMode: .stretch)
                                         .aspectRatio(contentMode: .fit)
+                                        .navigationBarBackButtonHidden(true)
                                 }
                                 NavigationLink(destination: ArchivePage(journalDays:$journalDays)) {
                                     Image("archiveimage")

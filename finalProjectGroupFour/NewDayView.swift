@@ -28,6 +28,7 @@ struct NewDayView:
                 print(journalDays.map {$0.journalText})
             }) {
                 Text("Submit")
+                    .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
             }
         }
     }

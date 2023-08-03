@@ -81,72 +81,65 @@
 import SwiftUI
 
 struct ArchivePage: View {
-   // @Environment(\.managedObjectContext) var context
+    // @Environment(\.managedObjectContext) var context
     // @State var journalText: String
     //@State var journalDays: [JournalDay] = []
     @Binding var journalDays: [JournalDay]
     var body: some View {
-        VStack {
-            Text("Archive")
-                .font(.system(size: 40))
-                .fontWeight(.black)
-            List {
-                ForEach (journalDays) {
-                    journalDay in Text(journalDay.journalText)
+        ZStack {
+            Color(red: (248/255), green: (248/255), blue: (243/255))
+                .ignoresSafeArea()
+            VStack {
+                Text("Archive")
+                    .font(.system(size: 40))
+                    .fontWeight(.black)
+                    .foregroundColor(Color(red: 162/255, green: 193/255, blue: 172/255, opacity: 1.0))
+                
+                List {
+                    ZStack {
+                        Color(red: (248/255), green: (248/255), blue: (243/255))
+                            .ignoresSafeArea()
+                        ForEach (journalDays) {
+                            journalDay in Text(journalDay.journalText)
+                        }
+                    }.listStyle(.plain)
                 }
-            }.listStyle(.plain)
-        }
-        .toolbar {
-            ToolbarItemGroup(placement: .status) {
-                HStack {
-                    NavigationLink(destination:SubmitContentView (journalText:"")) {
-                        Image("homeimage")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                    }
-                    NavigationLink(destination: ArchivePage(journalDays:$journalDays)) {
-                        Image("archiveimage")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                    }
-                    
-                    NavigationLink(destination: finalfriendspage(journalDays:$journalDays)) {
-                        Image("friendsimage")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                    }
-                    
-                    NavigationLink(destination: ProfilePage(journalDays:$journalDays)) {
-                        Image("profileimage")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
+                .toolbar {
+                    ToolbarItemGroup(placement: .status) {
+                        HStack {
+                            NavigationLink(destination:SubmitContentView (journalText:"")) {
+                                Image("homeimage")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fit)
+                                    .navigationBarBackButtonHidden(true)
+                            }
+                            NavigationLink(destination: ArchivePage(journalDays:$journalDays)) {
+                                Image("archiveimage")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                            
+                            NavigationLink(destination: finalfriendspage(journalDays:$journalDays)) {
+                                Image("friendsimage")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                            
+                            NavigationLink(destination: ProfilePage(journalDays:$journalDays)) {
+                                Image("profileimage")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fit)
+                            }
+                        }
                     }
                 }
             }
+            
         }
     }
-    
-
 }
-
-struct ArchivePage_Previews: PreviewProvider {
-    static var previews: some View {
-        ArchivePage(journalDays: .constant([]))
+    struct ArchivePage_Previews: PreviewProvider {
+        static var previews: some View {
+            ArchivePage(journalDays: .constant([]))
+        }
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

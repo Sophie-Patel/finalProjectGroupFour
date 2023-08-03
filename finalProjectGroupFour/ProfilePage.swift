@@ -14,9 +14,10 @@ struct ProfilePage: View {
             Color(red: (248/255), green: (248/255), blue: (243/255))
                 .ignoresSafeArea()
             VStack {
-                Text("Profile Page")
-                    .font(.title)
-                    .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
+                Text("Profile")
+                    .font(.largeTitle)
+                    .fontWeight(.black)
+                    .foregroundColor(Color(red: 162/255, green: 193/255, blue: 172/255))
                 Image("karliekloss")
                     .resizable(resizingMode: .stretch)
                     .aspectRatio(contentMode: .fit)
@@ -34,7 +35,7 @@ struct ProfilePage: View {
                 Image("perfectcirclestreak")
                     .resizable(resizingMode: .stretch)
                     .aspectRatio(contentMode: .fit)
-                    .cornerRadius(100)
+                    .cornerRadius(150)
                 Text("Well done on your 100 day streak!")
                     .font(.title2)
                     .foregroundColor(Color(red: 0.266, green: 0.347, blue: 0.29))
@@ -52,6 +53,7 @@ struct ProfilePage: View {
                                     Image("homeimage")
                                         .resizable(resizingMode: .stretch)
                                         .aspectRatio(contentMode: .fit)
+                                        .navigationBarBackButtonHidden(true)
                                 }
                                 NavigationLink(destination: ArchivePage(journalDays:.constant([]))) {
                                     Image("archiveimage")

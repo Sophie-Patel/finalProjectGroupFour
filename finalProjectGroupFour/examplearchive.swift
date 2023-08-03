@@ -15,7 +15,9 @@ struct examplearchive: View {
             VStack {
                 Text("What are you most proud of today?")
                     .font(.title)
+                    .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
                 Text("'I understood a hard concept at school and my teacher congratulated me!'")
+                    .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
             }
 
         }
