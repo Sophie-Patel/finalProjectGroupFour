@@ -11,7 +11,7 @@ struct HomePage: View {
     @State private var text = ""
     var body: some View {
         ZStack {
-            Color(red: (255/255), green: (240/255), blue: (219/255))
+            Color(red: (248/255), green: (248/255), blue: (243/255))
                 .ignoresSafeArea()
             VStack {
                 

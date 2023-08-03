@@ -10,17 +10,20 @@ import SwiftUI
 struct ContentView: View {
     @State private var text = ""
     var body: some View {
-        ZStack {
-            Color(red: (255/255), green: (240/255), blue: (219/255))
-                .ignoresSafeArea()
+       
             NavigationStack {
                 VStack {
+                    ZStack {
+                        Color(red: (248/255), green: (248/255), blue: (243/255))
+                            .ignoresSafeArea()
                     VStack(alignment: .center) {
-                        Text("Welcome to")
-                            .font(.title)
-                        Image("diemlogo")
+                  
+                        Image("finaldiemlogo")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
+                            .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                            .cornerRadius(10)
+
                     }
                     .toolbar {
                         ToolbarItemGroup(placement: .status) {

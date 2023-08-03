@@ -15,7 +15,6 @@
 		BDBEEF112A78FB6400D8EFB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDBEEF102A78FB6400D8EFB7 /* Assets.xcassets */; };
 		BDBEEF142A78FB6400D8EFB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDBEEF132A78FB6400D8EFB7 /* Preview Assets.xcassets */; };
 		BDFA595A2A7A83C100DD509A /* examplearchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFA59592A7A83C100DD509A /* examplearchive.swift */; };
-		BDFA595C2A7A84DC00DD509A /* examplefriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFA595B2A7A84DC00DD509A /* examplefriend.swift */; };
 		BDFA595E2A7A98B700DD509A /* finalfriendspage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFA595D2A7A98B700DD509A /* finalfriendspage.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +28,6 @@
 		BDBEEF102A78FB6400D8EFB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDBEEF132A78FB6400D8EFB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BDFA59592A7A83C100DD509A /* examplearchive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = examplearchive.swift; sourceTree = "<group>"; };
-		BDFA595B2A7A84DC00DD509A /* examplefriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = examplefriend.swift; sourceTree = "<group>"; };
 		BDFA595D2A7A98B700DD509A /* finalfriendspage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalfriendspage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,7 +67,6 @@
 				BD509EDA2A7916A10029033A /* ArchivePage.swift */,
 				BDFA59592A7A83C100DD509A /* examplearchive.swift */,
 				BDFA595D2A7A98B700DD509A /* finalfriendspage.swift */,
-				BDFA595B2A7A84DC00DD509A /* examplefriend.swift */,
 				BD509EDC2A7916B30029033A /* ProfilePage.swift */,
 				BDBEEF102A78FB6400D8EFB7 /* Assets.xcassets */,
 				BDBEEF122A78FB6400D8EFB7 /* Preview Content */,
@@ -158,7 +155,6 @@
 				BD509EDD2A7916B30029033A /* ProfilePage.swift in Sources */,
 				BDFA595E2A7A98B700DD509A /* finalfriendspage.swift in Sources */,
 				BD509EDF2A79203E0029033A /* HomePage.swift in Sources */,
-				BDFA595C2A7A84DC00DD509A /* examplefriend.swift in Sources */,
 				BDFA595A2A7A83C100DD509A /* examplearchive.swift in Sources */,
 				BD509EDB2A7916A10029033A /* ArchivePage.swift in Sources */,
 				BDBEEF0F2A78FB6200D8EFB7 /* ContentView.swift in Sources */,
