@@ -38,26 +38,26 @@ struct HomePage: View {
                             ToolbarItemGroup(placement: .status) {
                                 HStack (spacing:40) {
                                     NavigationLink(destination: SubmitContentView (journalText:"")) {
-                                        Image("homeimage")
+                                        Image("houseicon2")
                                             .resizable(resizingMode: .stretch)
                                             .aspectRatio(contentMode: .fit)
                                             .navigationBarBackButtonHidden(/*@START_MENU_TOKEN@*/false/*@END_MENU_TOKEN@*/)
                                     }
                                     Spacer()
                                     NavigationLink(destination: ArchivePage(journalDays:.constant([]))) {
-                                        Image("archiveimage")
+                                        Image("archiveicon2")
                                             .resizable(resizingMode: .stretch)
                                             .aspectRatio(contentMode: .fit)
                                     }
                                     Spacer()
                                     NavigationLink(destination: finalfriendspage(journalDays:$journalDays)) {
-                                        Image("friendsimage")
+                                        Image("peopleicon2")
                                             .resizable(resizingMode: .stretch)
                                             .aspectRatio(contentMode: .fit)
                                     }
                                   Spacer()
                                     NavigationLink(destination: ProfilePage(journalDays:$journalDays)) {
-                                        Image("profileimage")
+                                        Image("personicon2")
                                             .resizable(resizingMode: .stretch)
                                             .aspectRatio(contentMode:
                                                     .fit)

@@ -7,38 +7,38 @@
 import SwiftUI
 
 struct timerview: View {
-    @State var countdownTimer = 30
+    @State var countdownTimer = 5
     @State var timerRunning = true
     let timer =  Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    var prompt = [" What's your favorite way to spend a day off?",
+    var prompt = [" what's your favorite way to spend a day off?",
                   
-                "  What type of music are you into? ",
+                " what type of music are you into? ",
 
-                 " What was the best vacation you ever took and why?",
+                 "what was the best vacation you ever took and why?",
 
-                  "Where's the next place on your travel bucket list and why?",
+                  "where's the next place on your travel bucket list and why?",
 
-                  " What are your hobbies, and how did you get into them?",
+                  "what are your hobbies, and how did you get into them?",
 
-                  " What was your favorite age growing up?",
+                  " what was your favorite age growing up?",
 
-                  " What was the last thing you read?",
+                  " what was the last thing you read?",
 
-                  " Would you say you're more of an extrovert or an introvert?",
+                  " would you say you're more of an extrovert or an introvert?",
 
-                  " What was the last TV show you binge-watched?",
+                  " what was the last TV show you binge-watched?",
 
-                 "Are you into podcasts or do you only listen to music?",
+                 "are you into podcasts or do you only listen to music?",
 
-                  "Do you have a favorite holiday? Why or why not? ",
+                  "do you have a favorite holiday? Why or why not? ",
 
-                  "If you could only eat one food for the rest of your life, what would it be?",
+                  "if you could only eat one food for the rest of your life, what would it be?",
 
-                  " Do you like going to the movies or prefer watching at home?",
+                  " do you like going to the movies or prefer watching at home?",
 
-                 "What's your go-to guilty pleasure?"]
+                 "what's your go-to guilty pleasure?"]
 
-    var randomPrompt = Int.random(in: 0..<15)
+    var randomPrompt = Int.random(in: 0..<14)
     
         
       @State private var newPrompt = ""
@@ -55,6 +55,8 @@ struct timerview: View {
             if countdownTimer == 0 {
                 Text("Today's prompt is \(prompt[randomPrompt])")
                 
+            } else {
+                Text(" ggg")
             }
                 
                 VStack{

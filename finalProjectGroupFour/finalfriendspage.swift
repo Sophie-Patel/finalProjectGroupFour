@@ -22,26 +22,26 @@ struct finalfriendspage: View {
                         ToolbarItemGroup(placement: .status) {
                             HStack (spacing:40){
                                 NavigationLink(destination: SubmitContentView (journalText:"")) {
-                                    Image("homeimage")
+                                    Image("houseicon2")
                                         .resizable(resizingMode: .stretch)
                                         .aspectRatio(contentMode: .fit)
                                         .navigationBarBackButtonHidden(true)
 
                                 }
                                 NavigationLink(destination: ArchivePage(journalDays:$journalDays)) {
-                                    Image("archiveimage")
+                                    Image("archiveicon2")
                                         .resizable(resizingMode: .stretch)
                                         .aspectRatio(contentMode: .fit)
                                 }
                                 
                                 NavigationLink(destination: finalfriendspage(journalDays:.constant([]))) {
-                                    Image("friendsimage")
+                                    Image("peopleicon2")
                                         .resizable(resizingMode: .stretch)
                                         .aspectRatio(contentMode: .fit)
                                 }
                                 
                                 NavigationLink(destination: ProfilePage(journalDays:$journalDays)) {
-                                    Image("profileimage")
+                                    Image("personicon2")
                                         .resizable(resizingMode: .stretch)
                                         .aspectRatio(contentMode:
                                                 .fit)
