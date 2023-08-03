@@ -19,7 +19,7 @@ struct ContentView: View {
                             .ignoresSafeArea()
                     VStack(alignment: .center) {
                   
-                        Image("finalfinaldiem")
+                        Image("backgrounddiem")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
                             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
@@ -28,7 +28,7 @@ struct ContentView: View {
                     }
                     .toolbar {
                         ToolbarItemGroup(placement: .status) {
-                            HStack {
+                            HStack (spacing:40) {
                                 NavigationLink(destination:SubmitContentView (journalText:"")) {
                                     Image("homeimage")
                                         .resizable(resizingMode: .stretch)

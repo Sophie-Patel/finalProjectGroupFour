@@ -36,7 +36,7 @@ struct HomePage: View {
                         }
                         .toolbar {
                             ToolbarItemGroup(placement: .status) {
-                                HStack {
+                                HStack (spacing:40) {
                                     NavigationLink(destination: SubmitContentView (journalText:"")) {
                                         Image("homeimage")
                                             .resizable(resizingMode: .stretch)

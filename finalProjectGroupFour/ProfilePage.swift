@@ -48,7 +48,7 @@ struct ProfilePage: View {
                     }
                     .toolbar {
                         ToolbarItemGroup(placement: .status) {
-                            HStack {
+                            HStack (spacing:40){
                                 NavigationLink(destination: HomePage(journalDays:$journalDays)) {
                                     Image("homeimage")
                                         .resizable(resizingMode: .stretch)

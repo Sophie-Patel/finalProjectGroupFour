@@ -18,11 +18,18 @@ struct SubmitContentView: View {
             Color(red: (248/255), green: (248/255), blue: (243/255))
                 .ignoresSafeArea()
             VStack {
-                Text("What are you most grateful for today?")
+                Text("Home")
                     .font(.system(size: 40))
                     .fontWeight(.black)
                     .foregroundColor(Color(red: 162/255, green: 193/255, blue: 172/255))
+//                Text("What are you most grateful for today?")
+//                    .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
+//                    .font(.system(size: 30))
+
+                
                 Spacer()
+               
+                
                 
                 NewDayView(journalDays: $journalDays)
                 
@@ -41,27 +48,28 @@ struct SubmitContentView: View {
             
             .toolbar {
                 ToolbarItemGroup(placement: .status) {
-                    HStack {
+                    HStack (spacing:40) {
                         NavigationLink(destination:SubmitContentView (journalText:"")) {
                             Image("homeimage")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                                 .navigationBarBackButtonHidden(true)
                         }
-                        Spacer()
+                        
 
                         NavigationLink(destination: ArchivePage(journalDays:$journalDays)) {
                             Image("archiveimage")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                         }
-                        Spacer()
+                      
                         NavigationLink(destination: finalfriendspage(journalDays:$journalDays)) {
                             Image("friendsimage")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                         }
-                        Spacer()
+                       
+                            
                         NavigationLink(destination: ProfilePage(journalDays:$journalDays)) {
                             Image("profileimage")
                                 .resizable(resizingMode: .stretch)
