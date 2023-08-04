@@ -53,7 +53,7 @@ struct finalfriendspage: View {
                     
                     HStack {
                         VStack {
-                            Text("Friends page")
+                            Text("Friends")
                                 .font(.largeTitle)
                                 .fontWeight(.black)
                                 .foregroundColor(Color(red: 162/255, green: 193/255, blue: 172/255))
@@ -67,7 +67,7 @@ struct finalfriendspage: View {
                                         .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
                                     Group{
                                         HStack{
-                                            Text("I love kode with klossy!!!! Im really happy I can code now  ")
+                                            Text("I am grateful for my parents!")
                                                 .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
                                             
                                         }
@@ -98,7 +98,7 @@ struct finalfriendspage: View {
                                             .fontWeight(.semibold)
                                             .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
                                         HStack{
-                                            Text("i love kode with klossy!!!! i loveeee cake! ")
+                                            Text("I'm grateful for kode with klossy!")
                                                 .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
                                             
                                         }

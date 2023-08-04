@@ -16,7 +16,7 @@ struct NewDayView:
         VStack {
             TextField("Start journaling...", text: $journalText, axis: .vertical)
                 .padding()
-                .background(Color(.systemGroupedBackground))
+                .background(Color(red: 162/255, green: 193/255, blue: 172/255, opacity: 1.0))
                 .cornerRadius(15)
                 .padding()
             
@@ -29,8 +29,10 @@ struct NewDayView:
             }) {
                 Text("Submit")
                     .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
+                    .font(.title2)
             }
         }
+        .padding(.all)
     }
 //     func addJournal(journalText: String) {
 //        let newJournal = JournalDay(journalText: journalText)

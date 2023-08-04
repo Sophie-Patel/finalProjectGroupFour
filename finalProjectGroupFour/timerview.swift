@@ -12,31 +12,31 @@ struct timerview: View {
     let timer =  Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     var prompt = [" what's your favorite way to spend a day off?",
                   
-                " what type of music are you into? ",
+                "what do you want to change in your life? ",
 
-                 "what was the best vacation you ever took and why?",
+                 "what was the best thing that ever happened to you?",
 
-                  "where's the next place on your travel bucket list and why?",
+                  "where's the next on your bucket list and why?",
 
                   "what are your hobbies, and how did you get into them?",
 
-                  " what was your favorite age growing up?",
+                  "what was your favorite age growing up?",
 
-                  " what was the last thing you read?",
+                  "who has had the biggest influence on you?",
 
-                  " would you say you're more of an extrovert or an introvert?",
+                  "would you say you're more of an extrovert or an introvert?",
 
-                  " what was the last TV show you binge-watched?",
+                  "what do you love about yourself?",
 
-                 "are you into podcasts or do you only listen to music?",
+                 "what have you learnt today?",
 
-                  "do you have a favorite holiday? Why or why not? ",
+                  "what was the most enjoyable thing you did today? ",
 
-                  "if you could only eat one food for the rest of your life, what would it be?",
+                  "what do you want to achieve today?",
 
-                  " do you like going to the movies or prefer watching at home?",
+                  "what challenges do you think you'll face today?",
 
-                 "what's your go-to guilty pleasure?"]
+                 "what did you appreciate the most today"]
 
     var randomPrompt = Int.random(in: 0..<14)
     
@@ -53,10 +53,17 @@ struct timerview: View {
         VStack {
             
             if countdownTimer == 0 {
-                Text("Today's prompt is \(prompt[randomPrompt])")
+                Text("Today's prompt is: \(prompt[randomPrompt])")
+                    .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
+                    .multilineTextAlignment(.center)
+                    .font(.title)
+                
                 
             } else {
-                Text(" ggg")
+                Text("What three things are you most grateful for today? ")
+                    .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
+                    .multilineTextAlignment(.center)
+                    .font(.title)
             }
                 
                 VStack{

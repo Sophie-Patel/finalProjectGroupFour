@@ -14,20 +14,22 @@ struct SubmitContentView: View {
     @State var journalDays: [JournalDay] = []
     
     var body: some View {
-        ZStack {
+        ZStack{
             Color(red: (248/255), green: (248/255), blue: (243/255))
                 .ignoresSafeArea()
-            VStack {
+            
+            VStack (spacing:40){
                 Text("Home")
                     .font(.system(size: 40))
                     .fontWeight(.black)
                     .foregroundColor(Color(red: 162/255, green: 193/255, blue: 172/255))
+                   Spacer()
 //                Text("What are you most grateful for today?")
 //                    .foregroundColor(Color(red: 0.262, green: 0.344, blue: 0.282))
 //                    .font(.system(size: 30))
 
                 
-                Spacer()
+                
                timerview()
                 
                 
@@ -42,6 +44,7 @@ struct SubmitContentView: View {
                 
                 //      ArchivePage( journalDays: $journalDays)
             }
+            .padding(30)
             
             //
             //        }.padding()

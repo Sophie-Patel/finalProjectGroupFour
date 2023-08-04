@@ -96,14 +96,21 @@ struct ArchivePage: View {
                     .foregroundColor(Color(red: 162/255, green: 193/255, blue: 172/255, opacity: 1.0))
                 
                 List {
-                    ZStack {
-                        Color(red: (248/255), green: (248/255), blue: (243/255))
-                            .ignoresSafeArea()
+                    
+                     //   Color(red: (248/255), green: (248/255), blue: (243/255))
+                     //       .ignoresSafeArea()
                         ForEach (journalDays) {
                             journalDay in Text(journalDay.journalText)
+                                .listRowBackground(Color(red: (248/255), green: (248/255), blue: (243/255)))
                         }
-                    }.listStyle(.plain)
+                    
+                    
                 }
+                .listStyle(.plain)
+                 //   .background(Color(red: (248/255), green: (248/255), blue: (243/255)))
+            //.listRowBackground(Color(red: (248/255), green: (248/255), blue: (243/255)))
+            //.scrollContentBackground(.hidden)
+                
                 .toolbar {
                     ToolbarItemGroup(placement: .status) {
                         HStack (spacing:40){
@@ -134,6 +141,7 @@ struct ArchivePage: View {
                     }
                 }
             }
+            .padding(.all)
             
         }
     }
